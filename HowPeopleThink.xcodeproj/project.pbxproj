@@ -16,6 +16,7 @@
 		2B211A702647CA4B00FD1286 /* HowPeopleThink.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 2B211A6F2647CA4B00FD1286 /* HowPeopleThink.mlmodel */; };
 		2B211ADF2647D38800FD1286 /* SwifteriOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B211AD32647D37E00FD1286 /* SwifteriOS.framework */; };
 		2B211AE02647D38800FD1286 /* SwifteriOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2B211AD32647D37E00FD1286 /* SwifteriOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		66B14701BB5C1C44FF46A36F /* Pods_HowPeopleThink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CADE5F76D22BDC7B1BCAB093 /* Pods_HowPeopleThink.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,9 @@
 		2B211A672647B87300FD1286 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B211A6F2647CA4B00FD1286 /* HowPeopleThink.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = HowPeopleThink.mlmodel; sourceTree = SOURCE_ROOT; };
 		2B211ACA2647D37E00FD1286 /* Swifter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Swifter.xcodeproj; path = Swifter/Swifter.xcodeproj; sourceTree = "<group>"; };
+		66AC771B05267A9C68F23617 /* Pods-HowPeopleThink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HowPeopleThink.debug.xcconfig"; path = "Target Support Files/Pods-HowPeopleThink/Pods-HowPeopleThink.debug.xcconfig"; sourceTree = "<group>"; };
+		B350E5A23F4059B5D068C223 /* Pods-HowPeopleThink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HowPeopleThink.release.xcconfig"; path = "Target Support Files/Pods-HowPeopleThink/Pods-HowPeopleThink.release.xcconfig"; sourceTree = "<group>"; };
+		CADE5F76D22BDC7B1BCAB093 /* Pods_HowPeopleThink.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HowPeopleThink.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B211ADF2647D38800FD1286 /* SwifteriOS.framework in Frameworks */,
+				66B14701BB5C1C44FF46A36F /* Pods_HowPeopleThink.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +107,7 @@
 				2B211A582647B87200FD1286 /* HowPeopleThink */,
 				2B211A572647B87200FD1286 /* Products */,
 				2B211AB62647D01500FD1286 /* Frameworks */,
+				2C57E2596D47B99819B1499E /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,6 +137,7 @@
 		2B211AB62647D01500FD1286 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CADE5F76D22BDC7B1BCAB093 /* Pods_HowPeopleThink.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -147,6 +154,16 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		2C57E2596D47B99819B1499E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				66AC771B05267A9C68F23617 /* Pods-HowPeopleThink.debug.xcconfig */,
+				B350E5A23F4059B5D068C223 /* Pods-HowPeopleThink.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -154,10 +171,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2B211A6A2647B87300FD1286 /* Build configuration list for PBXNativeTarget "HowPeopleThink" */;
 			buildPhases = (
+				01E7A6EDA35225F614C914C1 /* [CP] Check Pods Manifest.lock */,
 				2B211A522647B87200FD1286 /* Sources */,
 				2B211A532647B87200FD1286 /* Frameworks */,
 				2B211A542647B87200FD1286 /* Resources */,
 				2B211AC42647D07600FD1286 /* Embed Frameworks */,
+				5BBDD675B5A67981861E608A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -256,6 +275,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01E7A6EDA35225F614C914C1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HowPeopleThink-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5BBDD675B5A67981861E608A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HowPeopleThink/Pods-HowPeopleThink-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HowPeopleThink/Pods-HowPeopleThink-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HowPeopleThink/Pods-HowPeopleThink-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2B211A522647B87200FD1286 /* Sources */ = {
@@ -409,6 +470,7 @@
 		};
 		2B211A6B2647B87300FD1286 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66AC771B05267A9C68F23617 /* Pods-HowPeopleThink.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -428,6 +490,7 @@
 		};
 		2B211A6C2647B87300FD1286 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B350E5A23F4059B5D068C223 /* Pods-HowPeopleThink.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
